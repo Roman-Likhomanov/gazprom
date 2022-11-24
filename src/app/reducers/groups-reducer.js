@@ -1,24 +1,24 @@
-import {api} from "../api/api";
+import {api} from "../../api/api";
 
 
 const initialState = []
 
 export const groupsReducer = (state = initialState, action) => {
     switch (action.type) {
-        case 'APP/SET-GROUPS':
-            return {...state, ...action.groups}
+        case 'SET-GROUPS':
+            return action.groups
         default:
             return state
     }
 }
 
 // actions
-export const setGroupsAC = (groups) => ({type: 'APP/SET-GROUPS', groups})
+export const setGroupsAC = (groups) => ({type: 'SET-GROUPS', groups})
 
 export const fetchGroupsTC = () => async(dispatch) => {
     try {
         let response = await api.getGroups()
-        dispatch(setGroupsAC(response))
+        dispatch(setGroupsAC(response.data))
     }
     catch(e) {
         const error = e.response

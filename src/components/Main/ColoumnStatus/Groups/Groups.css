@@ -1,0 +1,30 @@
+.groups {
+    min-width: 100%;
+    min-height: 200px;
+}
+
+.group {
+    height: 50px;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: #EFEFEF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.group:hover {
+    background-color: #c5d0db;
+    border-radius: 5px;
+    color: white;
+}
+
+.group.active {
+    background-color: #0CB4F1;
+    color: white;
+}
+
+
+
