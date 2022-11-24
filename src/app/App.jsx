@@ -3,6 +3,7 @@ import {fetchGroupsTC} from "../groups/groups-reducer";
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect} from "react";
 import {Header} from "../components/Header/Header";
+import {Main} from "../components/Main/Main";
 
 function App() {
   const dispatch = useDispatch()
@@ -18,6 +19,7 @@ function App() {
     <div className='app'>
       <Header/>
       <h1>Ноды</h1>
+      <Main/>
     </div>
   );
 }
