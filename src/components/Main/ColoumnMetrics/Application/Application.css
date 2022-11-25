@@ -1,0 +1,9 @@
+.application {
+    background-color: #EFEFEF;
+    border-radius: 5px;
+    margin: 5px;
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 500;
+}

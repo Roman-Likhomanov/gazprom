@@ -10,15 +10,23 @@ function App() {
 
     const dispatch = useDispatch()
 
+    let timerId;
+    const fetchApp = async () => {
+        await dispatch(fetchGroupsTC())
+        await dispatch(fetchMetricsTC())
+        return 1
+    }
+
     useEffect(() => {
-        // let timerId = setInterval(() => {
-            dispatch(fetchGroupsTC())
-            dispatch(fetchMetricsTC())
-        //     console.log(1)
-        // }, 1000)
-        // return () => {
-        //     clearInterval(timerId);
-        // }
+        fetchApp().then(res => {
+             timerId = setInterval(() => {
+                fetchApp()
+            }, 60000)
+        })
+
+        return () => {
+            clearInterval(timerId);
+        }
     }, [])
 
     return (

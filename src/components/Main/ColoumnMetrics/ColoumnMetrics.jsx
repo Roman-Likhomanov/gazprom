@@ -2,6 +2,7 @@ import '../Main.css';
 import {MetricCharts} from "./MetricCharts/MetricCharts";
 import {Interface} from "./Interface/Interface";
 import {Admin} from "./Admin/Admin";
+import {Application} from "./Application/Application";
 
 export const ColoumnMetrics = ({metric, node}) => {
 
@@ -18,8 +19,8 @@ export const ColoumnMetrics = ({metric, node}) => {
                 <div>
                     <Admin node={node}/>
                 </div>
-                <div className='app'>
-
+                <div>
+                    <Application node={node}/>
                 </div>
             </div>
         </div>
