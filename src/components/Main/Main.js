@@ -12,6 +12,8 @@ export const Main = () => {
 
     const [nodes, setNodes] = useState([])
     const [metric, setMetric] = useState()
+    const [interfaceState, setInterfaceState] = useState()
+    const [node, setNode] = useState()
 
     const getNodes = (groupName) => {
         setNodes(groups.filter(el => el.group_name === groupName))
@@ -21,11 +23,15 @@ export const Main = () => {
         setMetric(metrics.filter(el => el.node_name === nodeName))
     }
 
+    const getNode = (nodeName) => {
+        setNode(nodes.filter(el => el.node_name === nodeName))
+    }
+
     return (
         <div className='mainContainer'>
             <ColoumnStatus getNodes={getNodes}/>
-            <ColoumnNodes nodes={nodes} getMetric={getMetric}/>
-            <ColoumnMetrics metric={metric}/>
+            <ColoumnNodes nodes={nodes} getMetric={getMetric} getNode={getNode}/>
+            <ColoumnMetrics metric={metric} node={node}/>
         </div>
     );
 };
