@@ -4767,6 +4767,16 @@ he@^1.2.0:
   resolved "https://registry.yarnpkg.com/he/-/he-1.2.0.tgz#84ae65fa7eafb165fddb61566ae14baf05664f0f"
   integrity sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==
 
+highcharts-react-official@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/highcharts-react-official/-/highcharts-react-official-3.1.0.tgz#921e5614f9e8580bc99a1e3b531d51a70f396500"
+  integrity sha512-CkWJHrVMOc6CT8KFu1dR+a0w5OxCVKKgZUNWtEi5TmR0xqBDIDe+RyM652MAN/jBYppxMo6TCUVlRObCyWAn0Q==
+
+highcharts@^10.3.1:
+  version "10.3.1"
+  resolved "https://registry.yarnpkg.com/highcharts/-/highcharts-10.3.1.tgz#d06d7e7543823c80eea24f44e1c3c2142cf1ccda"
+  integrity sha512-8UgVcLmgpiYwnsII0Ht76O+GRutfbrLslZFH3c53fXgl3aZ6NRB4mW5qsIyfsUExMny/n9JqYO/BFNejOKC6AA==
+
 hoist-non-react-statics@^3.3.0, hoist-non-react-statics@^3.3.2:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz#ece0acaf71d62c2969c2ec59feff42a4b1a85b45"
@@ -7470,6 +7480,20 @@ react-is@^18.0.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
   integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
+
+react-jsx-highcharts@5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/react-jsx-highcharts/-/react-jsx-highcharts-5.0.0.tgz#48d24965cdcca061c050f16557add583762cf8ec"
+  integrity sha512-a2TQof/F5+lpSsaFvx1uSXGww/Z+jhKKAlZu/1+YuNH1LChOtefH6yVX7EjcywC82P/MXaoc1CQZd+qTpU/AzQ==
+  dependencies:
+    uuid "^8.3.2"
+
+react-jsx-highstock@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/react-jsx-highstock/-/react-jsx-highstock-5.0.0.tgz#7d48f11717150ad0218d94735b18113de7fada72"
+  integrity sha512-WlBzPd2FmDk2jqCLBoFZcFKuqwVP/5i3T5GjF1T8gdKok888IGH84/NrKcWFf/aWIYBb/L+BFpRz5Boh0pq2ig==
+  dependencies:
+    react-jsx-highcharts "5.0.0"
 
 react-redux@^8.0.5:
   version "8.0.5"

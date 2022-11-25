@@ -11,16 +11,21 @@ export const Main = () => {
     const metrics = useSelector(state => state.metrics)
 
     const [nodes, setNodes] = useState([])
+    const [metric, setMetric] = useState()
 
     const getNodes = (groupName) => {
         setNodes(groups.filter(el => el.group_name === groupName))
     }
 
+    const getMetric = (nodeName) => {
+        setMetric(metrics.filter(el => el.node_name === nodeName))
+    }
+
     return (
         <div className='mainContainer'>
             <ColoumnStatus getNodes={getNodes}/>
-            <ColoumnNodes nodes={nodes}/>
-            <ColoumnMetrics/>
+            <ColoumnNodes nodes={nodes} getMetric={getMetric}/>
+            <ColoumnMetrics metric={metric}/>
         </div>
     );
 };

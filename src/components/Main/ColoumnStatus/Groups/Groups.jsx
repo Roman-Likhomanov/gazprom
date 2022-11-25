@@ -3,7 +3,7 @@ import {useState} from "react";
 
 export const Groups = ({getNodes}) => {
 
-    const[active, setActive] = useState()
+    const[active, setActive] = useState('')
 
     const clickHandler = (e) => {
         setActive(e.currentTarget.textContent)
